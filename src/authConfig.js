@@ -12,8 +12,8 @@ import { LogLevel } from "@azure/msal-browser";
  */
 export const msalConfig = {
     auth: {
-        clientId: "Enter_the_Application_Id_Here", // This is the ONLY mandatory field that you need to supply.
-        authority: "https://login.microsoftonline.com/Enter_the_Tenant_Info_Here", // Defaults to "https://login.microsoftonline.com/common"
+        clientId: "8d30248b-92e0-47b9-a433-9badafe196c4", // This is the ONLY mandatory field that you need to supply.
+        authority: "https://login.microsoftonline.com/34e12086-196c-45a1-8c31-10bef6527faf", // Defaults to "https://login.microsoftonline.com/common"
         redirectUri: "/", // You must register this URI on Azure Portal/App Registration. Defaults to window.location.origin
         postLogoutRedirectUri: "/", // Indicates the page to navigate after logout.
         clientCapabilities: ["CP1"] // this lets the resource owner know that this client is capable of handling claims challenge.
@@ -59,8 +59,8 @@ export const protectedResources = {
     apiTodoList: {
         endpoint: "http://localhost:5000/api/todolist",
         scopes: {
-            read: [ "api://Enter_the_Web_Api_Application_Id_Here/Todolist.Read" ],
-            write: [ "api://Enter_the_Web_Api_Application_Id_Here/Todolist.ReadWrite" ]
+            read: [ "api://9781f299-44ef-4fad-9560-a7b7228b5236/Todolist.Read" ],
+            write: [ "api://9781f299-44ef-4fad-9560-a7b7228b5236/Todolist.ReadWrite" ]
         }
     }
 }
